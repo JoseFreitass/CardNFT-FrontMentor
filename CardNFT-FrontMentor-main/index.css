@@ -1,0 +1,152 @@
+*{
+    font-family: 'Outfit', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+
+
+.main{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 350px;
+    padding: 30px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgeq img{
+    margin: auto;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.imgeq::after {
+    content: url(images/icon-view.svg);
+    background-color: hsla(178, 100%, 50%, 0.5);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 5%;
+    position: absolute;
+    margin-top: 130px;
+    inset: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+  
+.imgeq:hover::after {
+    position: fixed;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.paragrafo{
+    margin: auto;
+    width: 350px;
+}
+
+.paragrafo h2{
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    width: 200px;
+}
+
+.paragrafo p{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.paragrafo h2:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+
+.informacoes{
+    margin: auto;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.eth{
+    display: flex;
+    color: hsl(178, 100%, 50%);
+    align-items: center;
+}
+
+.eth p {
+    margin: 7px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.clock{
+    display: flex;
+    color: hsl(215, 51%, 70%);
+    align-items: center;
+}
+
+.clock p {
+    margin: 7px;
+    align-items: center;
+    font-size: 18px;
+}
+
+
+.linha{
+    margin: 0 auto;
+    width: 350px;
+    padding: 0.1px;
+    background-color: hsl(215, 51%, 70%);
+    margin-top: 20px;
+}
+
+
+.user{
+    margin: auto;
+    width: 350px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.user img{
+    width: 50px;
+    border-radius: 50px;
+    border: solid 1px white;
+}
+
+.user p{
+    margin-left: 20px;
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+
+.user span{
+    color: white;
+}
+
+.user span:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
